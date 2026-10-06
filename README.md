@@ -40,7 +40,7 @@ The rack uses the conventional 19-inch server form factor because standard serve
 
 The boards are arranged in parallel, with their long axis aligned with the main airflow direction. Each board is attached to a rectangular plate/heatsink structure that can be clamped into the rack.
 
-![Rack CAD model](assets/rack-cad.png)
+![Rack CAD model](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfH5EymIs86qAukBSWVZtzEGvO_8coPMXdSQ38JJ6X4Hji0qc-nes7pmcYbX1codCzhFuOI3RQxONZhHuljB27CagFQM6r56SQIk-mDJziQ9qXbsBzoT9WGtGsLZZmqe_LgcT6LTxixdcSGikyWY3Zlbadj-Y_z9va_qcbsOreHYuPnaXo=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 The layout was partly inspired by dense phone-farm hardware. The use case is different, but it is one of the few examples of mechanically packaging many phones or phone boards in one enclosure.
 
@@ -48,7 +48,7 @@ A logic-board model was built approximately 1:1 in SolidWorks. Very small compon
 
 Because the processor package was not physically delayered, the exact SoC position under the shielding was not directly known. The internal heat-producing region is therefore an engineering approximation.
 
-![Logic-board model](assets/logic-board-model.png)
+![Logic-board model](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfv3EZtlSjQTVUXB9Ht_TcjMcheQrgKjU1WSktJtFmRWVciKHDUftEmWulOoZEQ9TkVDlEfPR3jyLIN2m8C0Mvpaoa_PoLGBOrAhcIk2uTCimB6ZfNYcBtgrhp4mB76M4DHIoI4ruQBlRtMNfGeysB-afW96thFhbyeJcBoJ1GuvI2T=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 ## Power and thermal characterization
 
@@ -58,13 +58,13 @@ The PSU exposes power data over USB, allowing power draw to be recorded programm
 
 Under one sustained workload, the board repeatedly drew around **8 W**.
 
-![Power draw and temperature under load](assets/power-temp-load.png)
+![Power draw and temperature under load](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdrl8RQlyDqDMzWGPpQUHyGnOylZENwDVJ85qWZ6hrC_8XhZVFNCfe8YOdClMNzPgBBKlCjzUIh9OJG2Nor8SczP9cFIiYOST01NUXeWPELIZM_EC6WXAM0ttvH4E9XoMow9dV6yM7NEEAXLi05quRx6zd5IRVCcumEeV5PKmsubgpzRpw=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 For the present CFD model, **12 W per board** is used as a conservative heat-load assumption. This is intentionally different from the measured ~8 W value and is one of the parameters being examined in sensitivity studies.
 
 A second run shows power behavior alongside the large-cluster temperature signal:
 
-![Power versus cluster temperature](assets/power-vs-cluster-temp.png)
+![Power versus cluster temperature](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdgMeOs3K4K05Z1-IFLXRpuGEYd_sdWCsk0XTHQz9eqtXc4dzluI6CV-QYs0R6X1VKGIwm7mYy_aGzTHv1mT_mdw017sEHCBJCnPJJVBZNZ4n37tue_kxYA2cYI8WG68fjSFCNPmA21qH89rFyf8AOg6JK61DEmxCKFvpSC6_T4lP5crY8=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 ## Cooling approach
 
@@ -88,7 +88,7 @@ The main material mapping is:
 - FR4 for the logic-board substrate;
 - silicon for the simplified processor regions.
 
-![Material-region detail](assets/material-detail.png)
+![Material-region detail](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXRn7vD8RNIZ_u8amsWKZNX0peFc1hWKA6Vkp-f5zHr1sGlJRS619Oule4ZzR4zipZvbTNunYff-o2wxC9JmMCTiMmQIZnhghj5TWixNWt3D2STSS1E9lyKUnngCvuCpzKcvsWbyGyVf4Dz1K1dSDiyiLye2UZgp60Lt932qrRH8gRTfk=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 The board-to-heatsink interface is currently modeled as **1 mm thick with a conductivity of 8 W/(m·K)**.
 
@@ -98,11 +98,11 @@ The initial conjugate heat-transfer simulation took approximately **2032 minutes
 
 The clearest result from the first run is that the boards toward the **back of the chassis run hottest**, reaching approximately **95 °C** under the modeled conditions.
 
-![Preliminary temperature field](assets/preliminary-temperature-field.png)
+![Preliminary temperature field](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfL42ildhck0kJqZuCiOrAVF3LwnjJksZX-ElJ9JboV3hD3zNgwmoAG2PxU1BVwUUoqdcyR4ojqF_uTLPr3JaoItzoJoRdB59sDuuxnKbfNd31Sak47ZmKYtx9bI1Hr0TyxcO51mn35l9SFtC98SuW2Hsa_45gmdTeFN9clvTCw8qIE=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 A second simulation view of the rack:
 
-![Thermal model view](assets/thermal-model-view.png)
+![Thermal model view](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1j0O9zxpV2RKxnsdhHkYYPhgeedwc8E4uhR15WAiZny-an4nxoa90Y_ANem2VmxhiKGgDqF57keGAPerAQbfMXQLjXdkQB-5t54iuzG3wirJuc9pWdvKgr0tFrxFd1kNEhcTDC14T6g1h8k3aZNzx6O6Z-7-G-lwbrqzbIfIplbmkmZ0=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 This result points to a lack of uniform inlet access near the rear boards and suggests that the four front fans should be spaced so that air reaches the board cluster more evenly.
 
@@ -112,7 +112,7 @@ The next question is not only *which boards are hottest?* but *why did the air t
 
 The rack/board arrangement is also being compared against the physical hardware assembly:
 
-![Physical board rack](assets/physical-board-rack.png)
+![Physical board rack](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcjarj4QGr_GKhRw3D4lbRoloHsTcI4sljX_tjXR1AE5XBHPfCSGl4vnVZTNgqeczOn3vT9ysq1ZM-jbjTsiR33tT3PN323_uH3XEU9qV14hK02RhuYBYOzB9P3gejW3LwDvMpRw1X55Qu7_uqzziYG3WVEAgCpGqZscDNJ4ySJDJNo=s2048?key=5Qii6-4OpIi7sWm_Y2ks1A)
 
 ## Current engineering questions
 
